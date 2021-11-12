@@ -1,0 +1,38 @@
+{
+    "cn": {
+        "basic-info": {
+            "name": "马志超",
+            "gender": "男",
+            "university": ["天津工业大学(本科)", "纽卡斯尔大学(硕士)"],
+            "degree": ["电子科学与技术工学学士", "云计算理学硕士"],
+            "location": "云南·昆明",
+            "email": "chattmazio@foxmail.com",
+            "self-introduction": "嗨，我是马志超。我是一个后端软件工程师，Java和Golang是我的主要开发语言，同时我也拥有一定的前端（React）开发经验。我的主要研究方向是基于区块连技术的应用和云计算。如果你觉得我们有共同语言或是可以一起合作，不妨电邮我。"
+        },
+        "details": {
+            "experiences": "",
+            "skills-proglang": "",
+            "skills-database":"",
+            "skills-tools":"",
+            "education": ""
+        }
+    },
+    "en": {
+        "basic-info": {
+            "name": "Zack Marcus",
+            "gender": "male",
+            "university": ["Tiangong University (Undergraduate)", "Newcastle University (Postgraduate)"],
+            "degree": ["Bachelor of Engineering in Electronic Science and Technology", "Master of Science in Cloud Computing"],
+            "location":"Kunming, Yunnan",
+            "email": "chattmazio@foxmail.com",
+            "self-introduction": "Hi, I'm Zack. I'm a back-end software engineer whose major programming languages are Java and Golang, I've simultaneously mastered some front-end developing skills (such as React) as well. My principal research interests are Blockchain-based applications and cloud computing. You could send email to me for discussion or cooperation."
+        },
+        "details": {
+            "experiences": "",
+            "skills-proglang": "",
+            "skills-database":"",
+            "skills-tools":"",
+            "education": ""
+        }
+    }
+}
