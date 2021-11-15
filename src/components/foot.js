@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <Box
           id="footer"
-          style={{ display:'flex',justifyContent:'center',width:'100%',marginTop:80, marginBottom:10 }}
+          style={{ display:'flex',justifyContent:'center',width:'100%',marginTop:80, marginBottom:15 }}
         >
           <Typography style={{ color: '#9e9e9e',fontFamily: 'Arial',fontSize: '0.8rem' }}>
             Copyright @Zack Marcus | 

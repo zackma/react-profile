@@ -1,19 +1,21 @@
-import { AppBar, Box, Toolbar, InputLabel, Select, MenuItem, FormControl } from '@material-ui/core'
+import { Box, InputLabel, Select, MenuItem, FormControl } from '@material-ui/core'
 
 export default function HeadBar({ languageChange }) {
     return (
         <Box sx={{ display:'flex',justifyContent: 'flex-end',width: '100%' }} >
-            <FormControl style={{minWidth: 100, marginTop: 6, marginRight: 40 }} >
-                <InputLabel id="language-select-label">Language</InputLabel>
+            <FormControl style={{ minWidth: 80, marginTop: 6, marginRight: 40 }} >
+                <InputLabel id="language-select-label" style={{ fontSize:'0.8rem' }} >Language</InputLabel>
                 <Select
                     labelId="language-select-label"
                     id="language-select"
                     label="language"
-                    style={{ fontSize:'0.7rem', width: 100 }}
+                    style={{ fontSize:'0.7rem', height: 30 }}
                     onChange={languageChange}
+                    autoWidth
+                    disableUnderline
                 >
-                    <MenuItem value={'en'} style={{ fontSize:'0.7rem' }}>English</MenuItem>
                     <MenuItem value={'cn'} style={{ fontSize:'0.7rem' }}>中文</MenuItem>
+                    <MenuItem value={'en'} style={{ fontSize:'0.7rem' }}>English</MenuItem>
                 </Select>
             </FormControl>
         </Box>

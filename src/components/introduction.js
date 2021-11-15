@@ -17,9 +17,9 @@ export default function SelfIntroduction({ language, profileData }) {
               </Box>
             </Grid>
             <Grid item xs={8} />
-            <Grid item xs={4} />
-            <Grid item xs={8}>
-              <Typography align="left" style={{ mb:15, fontSize:'0.9rem' }} gutterBottom>
+            <Grid item xs={3} />
+            <Grid item xs={9}>
+              <Typography align="left" style={{ mb:15, fontSize:'0.85rem' }} gutterBottom>
                 {profileData['basic-info']['self-introduction']}
               </Typography>
             </Grid>

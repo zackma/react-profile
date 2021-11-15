@@ -16,16 +16,16 @@ export default function PhotoCard({ home, data }) {
                     alt="Zack"
                     />
                     <Box style={{ display:'flex', flexDirection:'column' }}>
-                    <CardContent style={{ flex:'1 0 auto' }}>
-                        <Typography component="div" variant="h6" align="center" style={{ mb:15 }} >
-                        {data['basic-info']['name']}
-                        </Typography>
-                        <Box style={{ display:'flex', alignItems:'center', marginRight:10, marginTop:24 }}>
-                        <Typography component="div" variant="string">
-                            <LocationOnOutlined style={{ display:'block', float:'left', paddingBottom:4 }} />{data['basic-info']['location']}
-                        </Typography>
-                        </Box>
-                    </CardContent>
+                        <CardContent style={{ flex:'1 0 auto' }}>
+                            <Typography component="div" variant="h6" align="center" style={{ mb:15 }} >
+                                {data['basic-info']['name']}
+                            </Typography>
+                            <Box style={{ display:'flex', alignItems:'center', marginRight:10, marginTop:24 }}>
+                                <Typography component="div" variant="caption" style={{ fontSize:"0.8rem" }} >
+                                    <LocationOnOutlined style={{ display:'block', float:'left', paddingBottom:4 }} />{data['basic-info']['location']}
+                                </Typography>
+                            </Box>
+                        </CardContent>
                     </Box>
                 </Card>
                 

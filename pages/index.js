@@ -1,6 +1,6 @@
 import Layout from '../src/components/layout'
 import EssentialInfo from '../src/components/essential'
-import { Box, Typography, Divider } from '@material-ui/core'
+import { Divider } from '@material-ui/core'
 import { loadProfileData, getAllRootDetails } from '../src/utils/load'
 import { useState, useEffect } from 'react'
 import SelfIntroduction from '../src/components/introduction'
@@ -53,7 +53,6 @@ export default function Home({ profile, details }) {
           language={language}
           details={details}
         />
-       
       </Layout>
   )
 }
