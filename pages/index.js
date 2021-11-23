@@ -1,52 +1,58 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout, { siteTitle } from '../components/layout'
-import Date from '../components/date'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from  '../lib/posts'
+import Layout from '../src/components/layout'
+import EssentialInfo from '../src/components/essential'
+import { Divider } from '@material-ui/core'
+import { loadProfileData, getAllRootDetails } from '../src/utils/load'
+import { useState, useEffect } from 'react'
+import SelfIntroduction from '../src/components/introduction'
+import ProfileDetails from '../src/components/details'
 
-export async function getServerSideProps(context) {
-  console.info('running...')
-  const allPostsData = getSortedPostsData()
+export async function getServerSideProps() {
+  const allJsonData = await loadProfileData()
+  let details = getAllRootDetails()
+  details = details.map(each=>{return each['params']['id']})
+ 
   return {
     props: {
-      data: allPostsData
+      profile: allJsonData,
+      details: details
     }
   }
 }
 
-export default function Home({ data }) {
+export default function Home({ profile, details }) {
+
+    const [language, setLanguage] = useState('cn')
+    const [profileData, setProfileData] = useState(profile['cn'])
+
+    function handleChange(event) {
+      const lang = event['target']['value']
+      setLanguage(lang)
+    }
+
+    useEffect(() => {
+      setProfileData(language === 'en'?profile['en']:profile['cn'])
+    }, [language])
 
     return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <Link href="/fetch/swr_test">
-            <a>our Next.js tutorial</a>
-          </Link>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {data.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`} >
-                <a>{title}</a>
-              </Link>              
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+      <Layout
+        home
+        data={profileData}
+        languageChange={handleChange}
+      >
+        <SelfIntroduction
+          language={language}
+          profileData={profileData}
+        />
+        <Divider style={{ marginTop:20 }}/>
+        <EssentialInfo 
+          language={language}
+          profileData={profileData}
+        />
+        <Divider style={{ marginTop:20 }}/>
+        <ProfileDetails
+          language={language}
+          details={details}
+        />
+      </Layout>
   )
 }
