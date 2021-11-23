@@ -10,11 +10,136 @@
             "self-introduction": "嗨，我是马志超。我是一个后端软件工程师，Java和Golang是我的主要开发语言，同时我也拥有一定的前端（React）开发经验。我的主要研究方向是基于区块连技术的应用和云计算。如果你觉得我们有共同语言或是可以一起合作，不妨电邮我。"
         },
         "details": {
-            "experiences": "",
-            "skills-proglang": "",
-            "skills-database":"",
-            "skills-tools":"",
-            "education": ""
+            "experiences": [
+                {
+                    "company": "中国联通",
+                    "position": "中级软件工程师",
+                    "technics-tag": ["Java","ReactJs","PL/SQL","Docker","SpringCloud","K8s"],
+                    "serving-time":"2017.04 - 2020.05",
+                    "items":["订单中心订单调度","中台运营看板","五华智慧城管"],
+                    "summary":"在中国联通云南省分公司资源中心任软件工程师。在职期间主要从事内部运营系统和数据可视化中台看板的开发和迭代。其中数据可视化中台看板是一个从无到有的项目，我担任该项目的项目组长，从最早在业务领导协助下梳理业务指标需求，到系统架构设计、数据库设计、数据抽取以及最终开发和上线都由我带领四人小团队完成。其中后端技术主要使用Spring Cloud框架、前端使用了基于React的Ant Design框架、数据抽取主要使用了ETL工具Kettle，并将它与传统的和Oracle存储过程相结合。内部运营系统我主要负责订单调度的开发，这是一个基于亚信老系统架构的扩展开发，主要考虑融合已有的订单业务流程引擎。在这段工作的在职期间，我扩展了自己在项目管理和项目风险把控方面的能力，对软件开发有了新的认知。",
+                    "latest":2020
+                },
+                {
+                    "company": "东软集团",
+                    "position": "Java工程师",
+                    "technics-tag": ["Java", "PB", "js", "PL/SQL", "Objective-C", "Spring", "Structs", "Hibernate"],
+                    "serving-time":"2015.03 - 2017.03",
+                    "items":["乡村医院信息管理系统（village HIS,C/S）","乡村医疗结算系统(B/S)","昆明人社通（IOS)"],
+                    "summary":"在东软集团西南大区昆明研发中心政府开发一部任Java软件工程师。部门主要业务是负责全省医保信息化建设和省内大部分地州医院，医保定点药店的管理、收费系统搭建，所有业务都和医疗及医保政策相关。系统主要是少部分用PB搭建的定点收费系统和多数基于Java的BS管理系统，数据库以Oracle为主，多数项目架构是SSH+Oracle，少数项目ORM用到MyBatis，其中也涉及多线程和定时任务，PLSQL的开发和部分系统的维护、信息查询也一直贯穿于整个工作，在此期间大大提升了自己的数据库能力。前期接触过的项目有服务于医保信息查询的IOS app开发（参与写过简单的ios界面），其后端业务逻辑基本基于Java开发（参与过部分接口开发）。完整接触过的项目是BS版的村级医疗收费软件，整个业务从门诊到开药到发药到住院到出院都涉及到，其中也包含了药品库存管理的整个流程（入库-出库-发药-盘点-结存）。项目开发从原型设计到数据库设计和建模以及前后端的开发都有参与。在此期间不仅提升了自己Java能力，同时对整个WEB架构的控制层，业务层和持久层有了更为深刻的理解。开始了解和比较不同的WEB框架的优缺点和可用性并探索WEB轻框架。",
+                    "latest":2017
+                },
+                {
+                    "company": "南天电子",
+                    "position": "测试工程师",
+                    "technics-tag": ["Java","js"],
+                    "serving-time":"2013.08 - 2015.02",
+                    "items":["zackpop(jQuery 封装组件)"],
+                    "summary":"在云南南天电子信息股份产业有限公司过程管理部门做ATM机相相关系统白盒测试，系统架使用Spring+Struts+Hibernate+FreeMarker Template。在此期间对MVC框架及整个WEB开发流程有了深入了解并开始自己探索轻便的WEB框架。",
+                    "latest":2015
+                }
+            ],
+            "skills-proglang": [
+                {
+                    "prog-lang": "Java",
+                    "proficiency": "90%",
+                    "using-time": "6年",
+                    "description": "熟悉语法;了解JVM基本原理;熟悉常用库和数据结构;熟悉SpringMVC,Struts,SpringBoot,SpringCloud,JFinal等主流框架;熟悉Mybatis,Hibernet常用ORM框架;熟悉Nginx/Tomcat容器;有基于Netty的NIO-Socket开发经验;硕士期间Java高级编程课程获得过优秀成绩(94%)",
+                    "index": 1
+                },
+                {
+                    "prog-lang": "Golang",
+                    "proficiency": "70%",
+                    "using-time": "2年",
+                    "description": "熟悉语法;熟悉常用库和数据类型;了解Gin框架;有基于Hyperledger Fabric框架的开发经验(硕士期间);可参照常用库和模块文档快速开发",
+                    "index": 2
+                },
+                {
+                    "prog-lang": "JavaScript",
+                    "proficiency": "60%",
+                    "using-time": "5年",
+                    "description": "熟悉常用接口,方法和常用数据结构;了解ECMAScript规范;熟悉jQuery框架,有插件封装经验;熟悉React框架,了解组件生命周期,属性和状态,熟悉常用HOOKs;可结合html/css(或React UI组件)快速开发和调试页面",
+                    "index": 3
+                },
+                {
+                    "prog-lang": "Python",
+                    "proficiency": "50%",
+                    "using-time": "1年",
+                    "description": "了解语法;有Flask框架开发和部署经验;有Scrapy爬虫框架开发经验;熟悉包管理工具Anaconda;熟悉Jupyter Notebook文档使用;可参照常用库和模块文档快速开发",
+                    "index": 4
+                }
+            ],
+            "skills-database": [
+                {
+                    "db-type": "Oracle",
+                    "proficiency": "80%",
+                    "using-time": "5年",
+                    "description": "熟悉脚本语法和数据类型;可进行表结构调优;熟悉PL/SQL;可结合PowerDesigner设计和建模;可结合PL/SQL开发视图和存储过程、触发器",
+                    "index": 1
+                },
+                {
+                    "db-type": "Mysql",
+                    "proficiency": "70%",
+                    "using-time": "4年",
+                    "description": "熟悉脚本语法和数据类型;可结合PowerDesigner设计和建模",
+                    "index": 2
+                },
+                {
+                    "db-type": "Redis",
+                    "proficiency": "50%",
+                    "using-time": "4年",
+                    "description": "了解常用脚本语法",
+                    "index": 3
+                }
+            ],
+            "skills-tools": [
+                {
+                    "tool-name": "Git/SVN",
+                    "proficiency": "80%",
+                    "using-time": "5年",
+                    "description": "熟悉代码托管和项目协同相关操作;熟悉常用指令",
+                    "index": 1
+                },
+                {
+                    "tool-name": "IntelliJ-IDEA/VSCode",
+                    "proficiency": "80%",
+                    "using-time": "4年",
+                    "description": "Java,Golang和Js首选集成开发工具;熟悉快捷键,常用插件和代码调试",
+                    "index": 2
+                },
+                {
+                    "tool-name": "Maven",
+                    "proficiency": "80%",
+                    "using-time": "4年",
+                    "description": "熟悉常用指令;熟悉常用pom结构和相关项目结构;可结合IntelliJ IDEA快速搭建项目框架",
+                    "index": 3
+                },
+                {
+                    "tool-name": "Docker",
+                    "proficiency": "70%",
+                    "using-time": "3年",
+                    "description": "熟悉Docker常用指令;了解Docker应用简单部署;了解Docker集群,能结合Docker文档进行简单集群部署;熟悉Docker常用网络模式Bridge网络和应用网段分配;能够结合项目应用Docker-compose快速创建Docker镜像和容器",
+                    "index": 4
+                }
+            ],
+            "education": [
+                {
+                    "university":"纽卡斯尔大学",
+                    "major":"云计算",
+                    "degree":"理学硕士",
+                    "study-time":"2020 - 2021",
+                    "description": "虽然拥有5年的开发经验，但考虑到自己并非本科计算机/软件专业的科班毕业生，于是在2019年开始计划攻读计算机方向硕士，这样以来一方面可以补充和加固自己的在计算机领域的知识体系，一方面基于现有的开发经验，可以更有针对性地发展自己感兴趣的技术和学术方向。<br /><br />于是于2020年放弃在中国联通的工作，开始申请和备考纽卡斯尔大学云计算硕士，并于2020年9月成功入读纽卡斯尔大学。学习期间主修课程包括高级Java编程、大数据分析、分布式算法、云计算、物联网、机器学习基础等，毕业论文研究方向是基于云应用扩展性的区块链方法探索。<br /><br />由于受到疫情的影响，本人几乎所有课程是通过远程授课的形式完成的，但这并没有太多影响到自己对于专业和英语语言的学习和应用：学习期间我积极参与每一次专业课视频讨论和小组学习，通过和同学、教授的频繁沟通与合作，不断吸收新技能，巩固旧知识，最终取得理想的毕业成绩。根据学校颁发的高等教育成就报告显示，本人毕业成绩为优秀(总成绩70%以上)，并凭借多年的Java开发经验在高级Java编程模块获得94%的高分。",
+                    "latest": 2021
+                },
+                {
+                    "university":"天津工业大学",
+                    "major":"电子科学与技术",
+                    "degree":"工学学士",
+                    "study-time":"2009 - 2013",
+                    "description": "2009年被天津工业大学录取，主修微机原理、电路理论、C语言程序设计、数据结构等课程;在校期间有任职校学生会体育部的经历，培养了我的团队协作意识;学习专业课之余，我参加过学院级别程序设计大赛和电子电路设计大赛, 这些比赛经历强化了我的实践能力。",
+                    "latest": 2013
+                }
+            ]
         }
     },
     "en": {
@@ -28,11 +153,136 @@
             "self-introduction": "Hi, I'm Zack. I'm a back-end software engineer whose major programming languages are Java and Golang, I've simultaneously mastered some front-end developing skills (such as React) as well. My principal research interests are Blockchain-based applications and cloud computing. You could send email to me for discussion or cooperation."
         },
         "details": {
-            "experiences": "",
-            "skills-proglang": "",
-            "skills-database":"",
-            "skills-tools":"",
-            "education": ""
+            "experiences": [
+                {
+                    "company": "China Unicom",
+                    "position": "Intermediate Software Engineer",
+                    "technics-tag": ["Java","ReactJs","PL/SQL","Docker","SpringCloud","K8s"],
+                    "serving-time":"2017.04 - 2020.05",
+                    "items":["Orders Schedule of Orders Center","the data visible central platform", "Smart Municinple Management of Wuhua District"],
+                    "summary":"I worked as a software engineer in the Resource Center of China Unicom Yunnan branch. During this serving time, I was mainly engaged in the development and iteration of some internal systems and a data visible central platform. Among them, the data visible central platform is a project which was built from scratch. <br /><br /> As the project leader of this project, I led a small team of four teamates to achieve it from sorting out business benchmark requirements with leaders of other departments to designing the architecture of system, designing the database, extracting transactional data, development and launch. <br /><br /> The back-end technics mainly covered Spring Cloud framework, while the front-end technics covered a React framework named Ant-Design. As for data extraction, we used an ETL tool named Kettle and combined it with the traditional Oracle stored procedure. For the internal business operational system, I was primarily resiponsible for the development of orders schduling module, which was essentially an extended development based on the old system architecture from AsiaInfo, the target of this achievement was to integrate existing business processing engine. Through my whole serving time, I've extended my capability in managing projects and controlling the risk of projects, I've as well gained novel awareness in software development.",
+                    "latest":2020
+                },
+                {
+                    "company": "Neusoft",
+                    "position": "Java Software Engineer",
+                    "technics-tag": ["Java", "PB", "js", "PL/SQL", "Objective-C", "Spring", "Structs", "Hibernate"],
+                    "serving-time":"2015.03 - 2017.03",
+                    "items":["HIS","village-HIS","VHIS charing","Infomation Center of Kunming Human Resources and Social Security"],
+                    "summary":"I worked as a Java Software Engineer in the Goverment Development Department of Neusoft Group Yunnan branch. The primary business and responsibility of this department is to build information systems for the medical insurance in the whole province, furthermore, the construction of management and charging systems of most hospitals and pharmacy which supports medical insurance service. <br /> <br /> Systems consist of few charging modules which are built with PB and most management modules based on B/S architecture which are built with Java. The database is mainly Oracle. Most projects based on Struts, Spring and Hibernate composite framework, while some of them also uses MyBatis as ORM. The work of development is also involved with multi-threading, scheduled tasks and PL/SQL stored procedure. During this serving time, I've greatly enhanced my ability on using database tools and database development. Apart from thtese works, I've as well taken part in the develpment of an IOS application which is used to provide quering functionality for medical insurance business. I was coding for the user interfaces and the data demonstration in this project, the IOS application needs to invoke interfaces from the back-end service which is developed with Java. In some medical insurance charging systems, the complete business involves from outpatient service to prescription, distribution, hosptitalization and discharge, among which also including the whole process of drug inventory management (warehousing - outbound - distribution - inventory - balance). <br /><br /> Most projects I've participated were involved with prototype design, database design, font-end and back-end development. During this period, I've not only improved my ability in Java programming, but also thoroughly gained a comprehension about the principle of widely used Web frameworks developed in Java and the MVC architecture, simultaneously, I started to learn about agile development.",
+                    "latest":2017
+                },
+                {
+                    "company": "Nantian Electronic Information",
+                    "position": "Software Testing Engineer",
+                    "technics-tag": ["Java","js"],
+                    "serving-time":"2013.08 - 2015.02",
+                    "items":["zackpop(Component encapsulated with JQuery)"],
+                    "summary":"I worked as a Software Testing Engineer in the processing management department of Yunnan Nantian Electric Information Industry. I was responsible for white testing on ATM related systems and modules. Most systems were based on Spring, Struts, Hibernate and FreeMarker composite framework. During this period, I started to learn software developing knowledge and some basic skills of Web development.",
+                    "latest":2015
+                }
+            ],
+            "skills-proglang": [
+                {
+                    "prog-lang": "Java",
+                    "proficiency": "90%",
+                    "using-time": "6 years",
+                    "description": "Familiar with language grammar;<br />Understand JVM basic principle;<br />Familiar with widely used buit-in libraries and data structure;<br />Familiar with Spring relevant, Struts and widely used ORM framework;<br />Familiar with Nginx,Tomcat;<br />Owing developing experience on Netty based NIO-Socket application;<br />Got 94% high mark in Advanced Java Programming module in master period",
+                    "index": 1
+                },
+                {
+                    "prog-lang": "Golang",
+                    "proficiency": "70%",
+                    "using-time": "2 years",
+                    "description": "Familiar with language grammar;<br />Familiar with widely used libraries and data structure;<br />Understand Gin framework;<br />Owing developing experience on Hyperledger Fabric framework based blockchain application",
+                    "index": 2
+                },
+                {
+                    "prog-lang": "JavaScript",
+                    "proficiency": "60%",
+                    "using-time": "5 years",
+                    "description": "Familiar with commonly used interfaces, functionalities and data structure;<br />Understand criterion of ECMAScript;<br />Familiar with JQuery framework;<br />Familiar with React framework, understand the life circle of its components, understand prop and state, familiar with commonly used HOOKs;<br />Could rapidly perform development and debug combined with HTML/CSS or React UI components",
+                    "index": 3
+                },
+                {
+                    "prog-lang": "Python",
+                    "proficiency": "50%",
+                    "using-time": "1 year",
+                    "description": "Understand grammar;<br />Owing developing and deploying experience on Flask framework based application;<br />Owing developing experience on Scrapy framework based application;<br />Familiar with package management tools such as Anaconda;<br />Familiar with programmable documentation tools Jupyter Notebook;<br />Could perform development relying on the document of built-in libraries and modules",
+                    "index": 4
+                }
+            ],
+            "skills-database": [
+                {
+                    "db-type": "Oracle",
+                    "proficiency": "80%",
+                    "using-time": "5 years",
+                    "description": "Familiar with grammar and data type of sql scripts;<br />Could optimize table structure;<br />Could perform design and modeling relying on PowerDesigner;<br />Could perform development on view, stored procedure and triggers",
+                    "index": 1
+                },
+                {
+                    "db-type": "Mysql",
+                    "proficiency": "70%",
+                    "using-time": "4 years",
+                    "description": "Familiar with grammar of sql script and data type;<br />Could perform design and modeling relying on PowerDesigner",
+                    "index": 2
+                },
+                {
+                    "db-type": "Redis",
+                    "proficiency": "50%",
+                    "using-time": "4 years",
+                    "description": "Understand grammar of commonly used script",
+                    "index": 3
+                }
+            ],
+            "skills-tools": [
+                {
+                    "tool-name": "Git/SVN",
+                    "proficiency": "80%",
+                    "using-time": "5 years",
+                    "description": "Familiar with codes hosting and project collaboration relevant operation;<br />Familiar with commonly used instructions",
+                    "index": 1
+                },
+                {
+                    "tool-name": "IntelliJ-IDEA/VSCode",
+                    "proficiency": "80%",
+                    "using-time": "4 years",
+                    "description": "Preferred integrated developing environment for Java, Golang, Python and JavaScript development;<br />Familiar with they corresponding shortcut key, commonly used plugin and code debugging function",
+                    "index": 2
+                },
+                {
+                    "tool-name": "Maven",
+                    "proficiency": "80%",
+                    "using-time": "4 years",
+                    "description": "Familiar with commonly used instructions;<br />Familiar with POM structure and commonly used project structure;<br />Could rapidly build project framework combined with IntelliJ IDEA",
+                    "index": 3
+                },
+                {
+                    "tool-name": "Docker",
+                    "proficiency": "70%",
+                    "using-time": "3 years",
+                    "description": "Familiar with commonly used Docker instructions;<br />Understand simple deployment on Docker application;<br />Understand Docker swarm, could perform simple deployment of Docker swarm based on official document;<br />Familiar with commonly used Docker network model such as Bridge model, could assign fixed network block to specific applications which are hosted with Docker container;<br />Could rapidly build Docker images and containers cobined with Docker-compose for different projects",
+                    "index": 4
+                }
+            ],
+            "education": [
+                {
+                    "university":"Newcastle University",
+                    "major":"Cloud Computing",
+                    "degree":"Master of Science",
+                    "study-time":"2020 - 2021",
+                    "description": "Undoubtedly, I owned experience of software developing of five years, however, in consideration of that my major in undergraduate degree was not a professional branch of computer science or software developing, in 2019, I was starting to make my plan to study for a master degree in computer science. Once I achieve my target, on one hand, I could replenish and enhance my comprehension on the knowledge in computer area, on the other hand, with a focused goal, I could further develop my own interests on relevant technology and academic direction. <br /><br /> Consequently, I quit my job in China Unicom in May 2020 to apply for the master of science in cloud computing of Newcastle University, then I successfully got the university offer and enrolled in Newcastle University in September 2020. Courses during the school term including Advanced Programming in Java, Big Data Analytics, Distributed Algorithms, Cloud Computing, Internet of Things, Machine Learning etc., the research work of my final dissertation is about Cloud Scalability based Blockchain approach. <br /><br /> Due to the impact of the Covid-19 pandemic, most of my courses were performed through real-time distancing teaching, but this did not obstruct my study and attempt on professional technics and English language, I actively took part in every professional discussion and group collaboration during the whole learning period, through frequent communication and cooperation with my classmates, tutor and professor, I‘ve consistently absorbed novel technics and consolidate my previous knowledge, eventually I achieved an ideal result for graduation. According to the HEAR (Higher Education Achievement Report) which is issued by Newcastle University, I passed all modules with distinction, dramatically, owing to my developing experience in Java, I got 94% high mark in Advanced Programming in Java module.",
+                    "latest": 2021
+                },
+                {
+                    "university":"Tiangong University",
+                    "major":"Electronic Science and Technology",
+                    "degree":"Bachelor of Engineering",
+                    "study-time":"2019 - 2013",
+                    "description": "I was admitted by Tiangong University in 2009, major courses including Principle of Microcomputer, Theory of Electronic Circuitry, Program Design in C Language, Structure of Data etc. During the school period, I served for the Sports Department of Students' Union, this experience had trained my awareness of team collaboration. Apart from learning on professional courses, I've as well taken part in programing design competition and electronic circuitry design competition of school level, these competitions consolidated my practical skills.",
+                    "latest": 2013
+                }
+            ]
         }
     }
 }

@@ -15,7 +15,7 @@ export default function PhotoCard({ home, data }) {
                     image="/images/profile.jpg"
                     alt="Zack"
                     />
-                    <Box style={{ display:'flex', flexDirection:'column' }}>
+                    <Box style={{ display:'flex', flexDirection:'column', color:'#616161' }}>
                         <CardContent style={{ flex:'1 0 auto' }}>
                             <Typography component="div" variant="h6" align="center" style={{ mb:15 }} >
                                 {data['basic-info']['name']}

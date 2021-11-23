@@ -8,9 +8,9 @@ import { KeyboardBackspace } from '@material-ui/icons'
 
 export const siteTitle = 'Personal Profile'
 
-export default function Layout({ children, home, data, languageChange }) {
+export default function Layout({ children, home, data, languageChange, language }) {
     return(
-        <div>
+        <div style={{ color:'#616161' }} >
             <Container fixed>
                 <header>
                     <Head>
@@ -23,7 +23,7 @@ export default function Layout({ children, home, data, languageChange }) {
                     {children}
                 </main>
                 {!home && (
-                    <Link href="/">
+                    <Link href="/" >
                         <a style={{ color:'#039BE5',textDecoration:'none' }}>
                             <KeyboardBackspace style={{ display:'block', float:'left', paddingBottom:4 }}/> 
                             Back Home Page

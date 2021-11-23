@@ -3,8 +3,8 @@ import { Box, InputLabel, Select, MenuItem, FormControl } from '@material-ui/cor
 export default function HeadBar({ languageChange }) {
     return (
         <Box sx={{ display:'flex',justifyContent: 'flex-end',width: '100%' }} >
-            <FormControl style={{ minWidth: 80, marginTop: 6, marginRight: 40 }} >
-                <InputLabel id="language-select-label" style={{ fontSize:'0.8rem' }} >Language</InputLabel>
+            <FormControl style={{ minWidth: 80, marginTop: 2, marginRight: 10 }} >
+                <InputLabel id="language-select-label" style={{ fontSize:'0.8rem',color:'#039BE5' }} >Language</InputLabel>
                 <Select
                     labelId="language-select-label"
                     id="language-select"

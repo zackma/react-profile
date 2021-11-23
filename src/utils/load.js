@@ -4,6 +4,18 @@ export async function loadProfileData() {
     return await JSON.parse(JSON.stringify(profileData))
 }
 
+export async function loadProfileDetailsById( id ) {
+    const allProfileData = await JSON.parse(JSON.stringify(profileData))
+    const detailInCn = allProfileData['cn']['details'][id]
+    const detailInEn = allProfileData['en']['details'][id]
+
+    return {
+        id, 
+        cn: detailInCn,
+        en: detailInEn
+    }
+}
+
 export function getAllRootDetails() {
     const allData = JSON.parse(JSON.stringify(profileData))
     let details = []
@@ -19,3 +31,4 @@ export function getAllRootDetails() {
         }
     })
 }
+

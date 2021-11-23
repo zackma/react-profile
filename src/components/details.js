@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Box, Grid, Typography } from '@material-ui/core'
-import { LabelImportant } from '@material-ui/icons'
+import { LabelImportant, WorkOutline, CodeOutlined, StorageOutlined, BuildOutlined, SchoolOutlined } from '@material-ui/icons'
+import { switchDetailTitle } from '../utils/switcher'
 
 export default function ProfileDetails({ language, details }) {
 
@@ -22,32 +23,25 @@ export default function ProfileDetails({ language, details }) {
             <Grid item xs={3} />
             <Grid item xs={9}>
               {details.map( detail => {
-                let content
-                switch (detail) {
-                  case "experiences":
-                    content = (language==='en'?'Experiences':'工作经验')
-                    break
-                  case "skills-proglang":
-                    content = (language==='en'?'Skills / Programming Language':'技术栈/语言')
-                    break
-                  case "skills-database":
-                    content = (language==='en'?'Skills / Database':'技术栈/数据库')
-                    break
-                  case "skills-tools":
-                    content = (language==='en'?'Skills / Tools': '技术栈/工具')
-                    break
-                  case "education":
-                    content = (language==='en'?'Education':'教育')
-                    break
-                  default:
-                    content = (language==='en'?'Others':'其它')
-                    break
-                }
+                let content = switchDetailTitle(detail, language)
                 return (
                   <div key={detail} style={{  marginBottom: 6 }}>
                     <Typography component="div">
-                      <Link href={`/details/${detail}`}>
-                        <a key={detail} style={{ color:'#039BE5',textDecoration:'none',fontSize:'0.9rem' }}>{content}</a>
+                      <Link 
+                        href={{ 
+                          pathname: `/details/${detail}`,
+                          query: {lang: language}
+                        }} 
+                        as={`/details/${detail}`}
+                      >
+                        <a key={detail} style={{ color:'#039BE5',textDecoration:'none',fontSize:'0.9rem' }}>
+                          { detail==="experiences" && <WorkOutline  style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
+                          { detail==="skills-proglang" && <CodeOutlined style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
+                          { detail==="skills-database" && <StorageOutlined style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
+                          { detail==="skills-tools" && <BuildOutlined style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
+                          { detail==="education" && <SchoolOutlined style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
+                          {content}
+                        </a>
                       </Link>
                       <Typography style={{ fontSize:'0.7rem',paddingLeft:2,color:'#9E9E9E' }}>
                         {language==='en'?'Update: November, 2021':'更新: 2021, 11'}
