@@ -1,5 +1,4 @@
 import { Box, Typography, Grid } from '@material-ui/core'
-import { LabelImportant } from '@material-ui/icons'
 
 export default function EssentialInfo({ language, profileData }) {
 
@@ -7,21 +6,10 @@ export default function EssentialInfo({ language, profileData }) {
         <div>
             <Box 
             id="basic-info"
-            style={{ display:'flex', justifyContent:'center', width:'88%', marginTop:20 }}
+            style={{ display:'flex', justifyContent:'center', width:'98%', marginTop:20 }}
             >
-            <Grid container spacing={2}>
-                <Grid item xs={4}>
-                    <Box style={{ display:'flex', flexDirection:'line', justifyContent:'center', width:'100%' }}>
-                        <LabelImportant fontSize="small" style={{ display:'block',paddingTop:4 }} />
-                        <Typography align="center" style={{ mb:15, fontSize:'1.1rem' }} gutterBottom>
-                            {language === 'en'?'Essential':'基本信息 '}
-                        </Typography>
-                    </Box>
-                </Grid>
-                <Grid item xs={2} />
-                <Grid item xs={4} />
-                <Grid item xs={3} />
-                <Grid item xs={9}>
+            <Grid container spacing={1}>
+                <Grid item xs={12}>
                     {language === 'en'?(
                         <Grid container spacing={0}>
                             <Grid item xs={7}>
@@ -62,8 +50,7 @@ export default function EssentialInfo({ language, profileData }) {
                         </Grid>
                     )}
                 </Grid>
-                <Grid item xs={3} />
-                <Grid item xs={9}>
+                <Grid item xs={12}>
                     <Typography align="left" style={{ mb:15 }} variant="subtitle2">
                         {language === 'en'?'University: ':'学校: '}{(profileData['basic-info']['university']).map(uni=>{
                             return (
@@ -74,8 +61,7 @@ export default function EssentialInfo({ language, profileData }) {
                         })}
                     </Typography>
                 </Grid>
-                <Grid item xs={3} />
-                <Grid item xs={9}>
+                <Grid item xs={12}>
                     <Typography align="left" style={{ mb:15 }} variant="subtitle2">
                         {language === 'en'?'Degree: ':'学历: '}{(profileData['basic-info']['degree']).map(dg=>{
                             return (
@@ -86,8 +72,7 @@ export default function EssentialInfo({ language, profileData }) {
                         })}
                     </Typography>
                 </Grid>
-                <Grid item xs={3} />
-                <Grid item xs={9}>
+                <Grid item xs={12}>
                     <Typography align="left" style={{ mb:15 }} variant="subtitle2" >
                         {language === 'en'?'Email: ':'电邮: '}
                         <Typography align="right" display="block" style={{ fontSize:'0.9rem',float:'right' }} variant="body1">

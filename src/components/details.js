@@ -8,25 +8,15 @@ export default function ProfileDetails({ language, details }) {
     return (
         <Box 
           id="details"
-          style={{ display:'flex',justifyContent:'center',width:'88%',marginTop:30 }}
+          style={{ display:'flex',justifyContent:'center',marginTop:10 }}
         >
-          <Grid container spacing={2}>
-            <Grid item xs={4}>
-              <Box style={{ display:'flex', flexDirection:'line', justifyContent:'center', width:'100%' }}>
-                <LabelImportant fontSize="small" style={{ display:'block',paddingTop:4 }} />
-                <Typography align="center" style={{ fontSize:'1.1rem' }} gutterBottom>
-                  {language === 'en'?'Details':'履历详情'}
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={8} />
-            <Grid item xs={3} />
-            <Grid item xs={9}>
+          <Grid container spacing={1}>
+            <Grid item xs={12}>
               {details.map( detail => {
                 let content = switchDetailTitle(detail, language)
                 return (
                   <div key={detail} style={{  marginBottom: 6 }}>
-                    <Typography component="div">
+                    <Typography align='center'>
                       <Link 
                         href={{ 
                           pathname: `/details/${detail}`,
@@ -35,11 +25,11 @@ export default function ProfileDetails({ language, details }) {
                         as={`/details/${detail}`}
                       >
                         <a key={detail} style={{ color:'#039BE5',textDecoration:'none',fontSize:'0.9rem' }}>
-                          { detail==="experiences" && <WorkOutline  style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
-                          { detail==="skills-proglang" && <CodeOutlined style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
-                          { detail==="skills-database" && <StorageOutlined style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
-                          { detail==="skills-tools" && <BuildOutlined style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
-                          { detail==="education" && <SchoolOutlined style={{ display:'block',float:'left', marginRight:25, paddingBottom:2 }} /> }
+                          { detail==="experiences" && <WorkOutline style={{ paddingTop:6, marginRight:'auto',marginLeft:'auto' }} />}
+                          { detail==="skills-proglang" && <CodeOutlined style={{ paddingTop:6, marginRight:'auto',marginLeft:'auto' }} /> }
+                          { detail==="skills-database" && <StorageOutlined style={{ paddingTop:6, marginRight:'auto',marginLeft:'auto' }} /> }
+                          { detail==="skills-tools" && <BuildOutlined style={{ paddingTop:6, marginRight:'auto',marginLeft:'auto' }} /> }
+                          { detail==="education" && <SchoolOutlined style={{ paddingTop:6, marginRight:'auto',marginLeft:'auto' }} /> }
                           {content}
                         </a>
                       </Link>

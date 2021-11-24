@@ -48,6 +48,7 @@ export default function Details( {detailsData} ) {
     return (
         <Layout
             languageChange={handleChange}
+            language={language}
         >
             <Typography variant="h6" align="center" component="div" gutterBottom>
                 {title}
@@ -71,7 +72,7 @@ export default function Details( {detailsData} ) {
                                     </Box>
                                 </Grid>
                                 <Grid item xs={4}>
-                                    <Box style={{ display:'flex', justifyContent:'right', fontStyle:'italic', color:'#9E9E9E' }} >
+                                    <Box style={{ display:'block', float:'right', fontStyle:'italic', color:'#9E9E9E', marginRight:1 }} >
                                         <Typography variant="caption" align="right" component="div" >
                                             {each['serving-time']}
                                         </Typography>
@@ -106,7 +107,7 @@ export default function Details( {detailsData} ) {
                                     </Box>
                                 </Grid>
                                 <Grid item xs={4}>
-                                    <Box style={{ display:'flex', justifyContent:'right', fontStyle:'italic', color:'#9E9E9E' }} >
+                                    <Box style={{ display:'block', float:'right', fontStyle:'italic', color:'#9E9E9E', marginRight:1 }} >
                                         <Typography variant="caption" align="right" component="div" >
                                             {language==='en'?'experience':'经验'} : {each['using-time']}
                                         </Typography>
@@ -139,7 +140,7 @@ export default function Details( {detailsData} ) {
                                     </Box>
                                 </Grid>
                                 <Grid item xs={4}>
-                                    <Box style={{ display:'flex', justifyContent:'right', fontStyle:'italic', color:'#9E9E9E' }} >
+                                    <Box style={{ display:'block', float:'right', fontStyle:'italic', color:'#9E9E9E', marginRight:1 }} >
                                         <Typography variant="caption" align="right" component="div" >
                                             {each['study-time']} 
                                         </Typography>
