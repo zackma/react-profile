@@ -3,7 +3,6 @@ import Head from 'next/head'
 import HeadBar from './head_bar'
 import PhotoCard from './photo_card'
 import Link from 'next/link'
-import Footer from './foot'
 import { KeyboardBackspace } from '@material-ui/icons'
 
 export const siteTitle = 'Personal Profile'
@@ -24,7 +23,6 @@ export default function Layout({ children, home, data, languageChange, language 
                 </main>
                 {!home && (
                     <Link 
-                        href="/" 
                         href={{ 
                           pathname: "/",
                           query: {lang: language}
@@ -36,13 +34,6 @@ export default function Layout({ children, home, data, languageChange, language 
                             Back Home Page
                         </a>
                     </Link>
-                )}
-                {home?(
-                    
-                    <Footer style={{ bottom:0}}/>
-                    
-                ):(
-                    <Footer/>
                 )}
             </Container>
         </div>
