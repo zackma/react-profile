@@ -1,24 +1,14 @@
 import { Box, Grid, Typography } from "@material-ui/core"
 import { LabelImportant } from "@material-ui/icons"
 
-export default function SelfIntroduction({ language, profileData }) {
+export default function SelfIntroduction({ profileData }) {
     return (
         <Box 
           id="introduction"
-          style={{ display:'flex', justifyContent:'center', width:'88%', marginTop:30 }}
+          style={{ display:'flex', justifyContent:'center', width:'100%', marginTop:30 }}
         >
-          <Grid container spacing={2}>
-            <Grid item xs={4}>
-              <Box style={{ display:'flex', flexDirection:'line', justifyContent:'center', width:'100%' }}>
-                <LabelImportant fontSize="small" style={{ display:'block',paddingTop:4 }} />
-                <Typography align="center" style={{ mb:15, fontSize:'1.1rem' }} gutterBottom>
-                  {language === 'en'?'Introduction':'自我介绍'}
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={8} />
-            <Grid item xs={3} />
-            <Grid item xs={9}>
+          <Grid container spacing={1}>
+            <Grid item xs={12}>
               <Typography align="left" style={{ mb:15, fontSize:'0.85rem' }} gutterBottom>
                 {profileData['basic-info']['self-introduction']}
               </Typography>

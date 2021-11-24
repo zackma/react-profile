@@ -10,7 +10,7 @@ export const siteTitle = 'Personal Profile'
 
 export default function Layout({ children, home, data, languageChange, language }) {
     return(
-        <div style={{ color:'#616161' }} >
+        <div style={{ color:'#616161', paddingBottom:50 }} >
             <Container fixed>
                 <header>
                     <Head>
@@ -23,16 +23,27 @@ export default function Layout({ children, home, data, languageChange, language 
                     {children}
                 </main>
                 {!home && (
-                    <Link href="/" >
+                    <Link 
+                        href="/" 
+                        href={{ 
+                          pathname: "/",
+                          query: {lang: language}
+                        }} 
+                        as={"/"}
+                    >
                         <a style={{ color:'#039BE5',textDecoration:'none' }}>
                             <KeyboardBackspace style={{ display:'block', float:'left', paddingBottom:4 }}/> 
                             Back Home Page
                         </a>
                     </Link>
                 )}
-                <footer>
-                    <Footer />
-                </footer>
+                {home?(
+                    
+                    <Footer style={{ bottom:0}}/>
+                    
+                ):(
+                    <Footer/>
+                )}
             </Container>
         </div>
     )
