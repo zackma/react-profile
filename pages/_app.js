@@ -17,6 +17,16 @@ export default function MyApp(props) {
 
   return (
     <React.Fragment>
+      <style jsx global>{`
+        html {
+          height: 100%
+        }
+        body {
+          height: auto;
+          min-height: 100%;
+          position: relative
+        }
+      `}</style>
       <Head>
         <title>My page</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />

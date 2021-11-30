@@ -1,5 +1,6 @@
 import { Container } from '@material-ui/core'
 import Head from 'next/head'
+import Footer from './foot'
 import HeadBar from './head_bar'
 import PhotoCard from './photo_card'
 import Link from 'next/link'
@@ -21,6 +22,9 @@ export default function Layout({ children, home, data, languageChange, language 
                 <main>
                     {children}
                 </main>
+                {home && (
+                    <Footer />
+                )}
                 {!home && (
                     <Link 
                         href={{ 
