@@ -15,7 +15,7 @@ export default function ProfileDetails({ language, details }) {
               {details.map( detail => {
                 let content = switchDetailTitle(detail, language)
                 return (
-                  <div key={detail} style={{  marginBottom: 6 }}>
+                  <div key={detail} style={{  marginBottom: 2 }}>
                     <Typography align='center'>
                       <Link 
                         href={{ 
