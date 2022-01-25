@@ -85,10 +85,10 @@
                     "index": 2
                 },
                 {
-                    "db-type": "Redis",
+                    "db-type": "MongoDB",
                     "proficiency": "50%",
-                    "using-time": "4年",
-                    "description": "了解常用脚本语法",
+                    "using-time": "2年",
+                    "description": "了解常用脚本语法,了解基本CRUD操作。",
                     "index": 3
                 }
             ],
@@ -228,10 +228,10 @@
                     "index": 2
                 },
                 {
-                    "db-type": "Redis",
+                    "db-type": "MongoDB",
                     "proficiency": "50%",
-                    "using-time": "4 years",
-                    "description": "Understand grammar of commonly used script",
+                    "using-time": "2 years",
+                    "description": "Familiar with grammar of commonly used script",
                     "index": 3
                 }
             ],
